@@ -75,13 +75,13 @@ include "../include/header.php";
                                         <tbody>
                                         <tr>
                                             <td scope="row">1</td>
-                                            <td>GJTF8K</td>
+                                            <td>35DGZX</td>
                                             <td>2</td>
                                             <td>VP Sài Gòn → VP Hà Nội</td>
                                             <td>09/12/2020</td>
-                                            <td>02:00</td>
+                                            <td>06:00</td>
                                             <td>250.000</td>
-                                            <td>09/12/2020 14:26:27</td>
+                                            <td>01:12 09/12/2020</td>
                                             <td>thẻ VISA</td>
                                             <td>Chờ thanh toán</td>
                                             <td>

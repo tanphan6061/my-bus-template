@@ -15,7 +15,7 @@ include "../include/header.php";
                                     <tbody>
                                     <tr>
                                         <td>Mã vé</td>
-                                        <td colspan="5"><strong class="text-primary">GJTF8K</strong></td>
+                                        <td colspan="5"><strong class="text-primary">35DGZX</strong></td>
                                     </tr>
                                     <tr>
                                         <td>Họ tên</td>
