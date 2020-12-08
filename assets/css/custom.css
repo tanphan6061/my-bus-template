@@ -1,0 +1,54 @@
+
+.seat-blank {
+    margin: 10px 20px;
+}
+
+.seat-inactive {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+
+}
+
+.seat-active {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #128df1;
+    background-color: #eff9ff;
+}
+
+.seat-block {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(84, 84, 84);
+    background-color: rgb(170, 170, 170);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card.payment {
+    cursor: pointer;
+}
+
+
+.card.payment.selected {
+    border: 1px dashed #ffa484;
+    background: #ffe2d7;
+    color: #ef5222;
+}
+
+.fa.fa-5 {
+    font-size: 12em;
+}
+
+a {
+    text-decoration: none !important;
+}
