@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./../../assets/css/custom.css" />
+    <!-- <link rel="stylesheet" href="./../../assets/css/font-awesome.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./../../assets/js/jquery.min.js"></script>
+    <script src="./../../assets/js/popper.min.js"></script>
+    <script src="./../../assets/js/bootstrap.min.js"></script>
+    <style>
+      .user-order {
+        display: flex;
+      }
+      .user-order > div {
+        width: 24%;
+        margin-right: 1%;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        style="margin-bottom: 24px"
+      >
+        <a class="navbar-brand" href="./">Mybus</a>
+        <button
+          class="navbar-toggler navbar-toggler-right collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navb"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navb" style="">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Tổng quan</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="javascript:void(0)"
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                >Thêm Đơn hàng</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kho-gui.html">Kho gửi</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./kho-nhan.html">Kho nhận</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+                     <a class="nav-link" href="#">Link 1</a>
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="#">Link 2</a>
+                     </li> -->
+            <!-- Dropdown -->
+            <li class="nav-item dropdown pr-5">
+              <a
+                class="nav-link dropdown-toggle dropdown-menu-left"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                <img
+                  class="rounded-circle"
+                  width="30"
+                  src="./../../assets/images/avt.jpg"
+                  alt=""
+                />
+                Nguyen Van A
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Thiết lập tài khoản</a>
+                <a class="dropdown-item" href="#">Đăng xuất</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container bg-white px-3 py-5 rounded border">
+      <div>
+        <h1>Kho nhận - văn phòng: TP. Hồ Chí Minh</h1>
+        <div class="mt-3 mb-4">
+          <a
+            href="./kho-nhan.html"
+            class="btn btn-default border"
+            style="background-color: #e6e6e6; color: #000"
+            >Các đơn hàng chưa giao</a
+          >
+          <a
+            href="./kho-nhan-da-nhan.html"
+            class="btn btn-default border"
+            style="color: #000"
+            >Các đơn hàng đã giao</a
+          >
+        </div>
+        <div>Tổng đơn :2</div>
+      </div>
+      <div>
+        <strong>Bộ lọc:</strong>
+        <div class="d-flex align-items-center">
+          Văn phòng gửi: &nbsp;
+          <select name="" class="form-control w-25" id="">
+            <option value="">Tất cả</option>
+            <option value="">Quảng Ngãi</option>
+            <option value="">Huế</option>
+          </select>
+        </div>
+      </div>
+      <div class="content">
+        <div class="d-flex justify-content-end my-3">
+          <button
+            data-toggle="modal"
+            data-target="#lenHang"
+            class="btn btn-success"
+          >
+            <i class="fa fa-check"></i> Giao hàng
+          </button>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                <div class="form-check">
+                  <input type="checkbox" />
+                </div>
+              </th>
+              <th>Mã đơn hàng</th>
+              <th>Ngày</th>
+              <th>Người gửi</th>
+              <th>Người nhận</th>
+              <th>Số hàng</th>
+              <th>Văn phòng nhận</th>
+              <th>Giá cước (đ)</th>
+              <th>Tác vụ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="form-check">
+                  <label>
+                    <input type="checkbox" value="" checked />
+                  </label>
+                </div>
+              </td>
+              <td>GMTaxc23zz</td>
+              <td>07/12/2020</td>
+              <td>Nguyễn Thị E</td>
+              <td>Nguyễn Văn D</td>
+              <td>1</td>
+              <td>Quảng Ngãi</td>
+              <td>110,000</td>
+              <td>
+                <button
+                  data-toggle="modal"
+                  data-target="#edit"
+                  class="btn btn-primary d-inline-block"
+                >
+                  <span class="fa fa-edit"></span>
+                </button>
+                <button
+                  data-toggle="modal"
+                  data-target="#xoa"
+                  class="btn btn-danger d-inline-block"
+                >
+                  <span class="fa fa-remove"></span>
+                </button>
+                <button class="btn btn-info d-inline-block">
+                  <span class="fa fa-print"></span>
+                </button>
+                <button
+                  data-toggle="modal"
+                  data-target="#history"
+                  class="btn btn-dark d-inline-block"
+                >
+                  <span class="fa fa-history"></span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="form-check">
+                  <label>
+                    <input type="checkbox" value="" />
+                  </label>
+                </div>
+              </td>
+              <td>GZX23zds3z</td>
+              <td>06/12/2020</td>
+              <td>Nguyễn Văn C</td>
+              <td>Nguyễn Thị Thu D</td>
+              <td>1</td>
+              <td>Huế</td>
+              <td>150,000</td>
+              <td>
+                <button class="btn btn-primary d-inline-block">
+                  <span class="fa fa-edit"></span>
+                </button>
+                <button
+                  data-toggle="modal"
+                  data-target="#xoa"
+                  class="btn btn-danger d-inline-block"
+                >
+                  <span class="fa fa-remove"></span>
+                </button>
+                <button class="btn btn-info d-inline-block">
+                  <span class="fa fa-print"></span>
+                </button>
+                <button class="btn btn-dark d-inline-block">
+                  <span class="fa fa-history"></span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Modal them -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="min-width: 90%" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <i class="fa fa-plus text-success" style="font-size: 1.2rem"></i>
+              &nbsp; &nbsp;Tạo đơn hàng
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="font-weight-bold mb-3">Nhân viên tạo: Nguyen Van A</div>
+            <div class="user-order">
+              <div class="form-group">
+                <label for="sdt-ng">SĐT người gửi:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập số điện thoại người gửi"
+                  id="sdt-ng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">Họ tên người gửi:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập họ tên người gửi"
+                  id="sdt-ng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">CMND người gửi:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CMND người gưi"
+                  id="sdt-ng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sel1">Văn Phòng gửi:</label>
+                <select class="form-control" name="TP" id="TP">
+                  <option value="1">Thành phố Hà Nội</option>
+                  <option value="2">Tỉnh Hà Giang</option>
+                  <option value="4">Tỉnh Cao Bằng</option>
+                  <option value="6">Tỉnh Bắc Kạn</option>
+                  <option value="8">Tỉnh Tuyên Quang</option>
+                  <option value="10">Tỉnh Lào Cai</option>
+                  <option value="11">Tỉnh Điện Biên</option>
+                  <option value="12">Tỉnh Lai Châu</option>
+                  <option value="14">Tỉnh Sơn La</option>
+                  <option value="15">Tỉnh Yên Bái</option>
+                  <option value="17">Tỉnh Hoà Bình</option>
+                  <option value="19">Tỉnh Thái Nguyên</option>
+                  <option value="20">Tỉnh Lạng Sơn</option>
+                  <option value="22">Tỉnh Quảng Ninh</option>
+                  <option value="24">Tỉnh Bắc Giang</option>
+                  <option value="25">Tỉnh Phú Thọ</option>
+                  <option value="26">Tỉnh Vĩnh Phúc</option>
+                  <option value="27">Tỉnh Bắc Ninh</option>
+                  <option value="30">Tỉnh Hải Dương</option>
+                  <option value="31">Thành phố Hải Phòng</option>
+                  <option value="33">Tỉnh Hưng Yên</option>
+                  <option value="34">Tỉnh Thái Bình</option>
+                  <option value="35">Tỉnh Hà Nam</option>
+                  <option value="36">Tỉnh Nam Định</option>
+                  <option value="37">Tỉnh Ninh Bình</option>
+                  <option value="38">Tỉnh Thanh Hóa</option>
+                  <option value="40">Tỉnh Nghệ An</option>
+                  <option value="42">Tỉnh Hà Tĩnh</option>
+                  <option value="44">Tỉnh Quảng Bình</option>
+                  <option value="45">Tỉnh Quảng Trị</option>
+                  <option value="46">Tỉnh Thừa Thiên Huế</option>
+                  <option value="48">Thành phố Đà Nẵng</option>
+                  <option value="49">Tỉnh Quảng Nam</option>
+                  <option value="51">Tỉnh Quảng Ngãi</option>
+                  <option value="52">Tỉnh Bình Định</option>
+                  <option value="54">Tỉnh Phú Yên</option>
+                  <option value="56">Tỉnh Khánh Hòa</option>
+                  <option value="58">Tỉnh Ninh Thuận</option>
+                  <option value="60">Tỉnh Bình Thuận</option>
+                  <option value="62">Tỉnh Kon Tum</option>
+                  <option value="64">Tỉnh Gia Lai</option>
+                  <option value="66">Tỉnh Đắk Lắk</option>
+                  <option value="67">Tỉnh Đắk Nông</option>
+                  <option value="68">Tỉnh Lâm Đồng</option>
+                  <option value="70">Tỉnh Bình Phước</option>
+                  <option value="72">Tỉnh Tây Ninh</option>
+                  <option value="74">Tỉnh Bình Dương</option>
+                  <option value="75">Tỉnh Đồng Nai</option>
+                  <option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+                  <option value="79" selected="">Thành phố Hồ Chí Minh</option>
+                  <option value="80">Tỉnh Long An</option>
+                  <option value="82">Tỉnh Tiền Giang</option>
+                  <option value="83">Tỉnh Bến Tre</option>
+                  <option value="84">Tỉnh Trà Vinh</option>
+                  <option value="86">Tỉnh Vĩnh Long</option>
+                  <option value="87">Tỉnh Đồng Tháp</option>
+                  <option value="89">Tỉnh An Giang</option>
+                  <option value="91">Tỉnh Kiên Giang</option>
+                  <option value="92">Thành phố Cần Thơ</option>
+                  <option value="93">Tỉnh Hậu Giang</option>
+                  <option value="94">Tỉnh Sóc Trăng</option>
+                  <option value="95">Tỉnh Bạc Liêu</option>
+                  <option value="96">Tỉnh Cà Mau</option>
+                </select>
+              </div>
+            </div>
+            <div class="user-order">
+              <div class="form-group">
+                <label for="sdt-ng">SĐT người nhận:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập số điện thoại người nhận"
+                  id="sdt-ng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">Họ tên người nhận:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập họ tên người nhận"
+                  id="sdt-ng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">CMND người nhận:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CMND người nhận"
+                  id="sdt-ng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sel1">Văn Phòng nhận:</label>
+                <select class="form-control" name="TP" id="TP">
+                  <option value="1" selected="">Thành phố Hà Nội</option>
+                  <option value="2">Tỉnh Hà Giang</option>
+                  <option value="4">Tỉnh Cao Bằng</option>
+                  <option value="6">Tỉnh Bắc Kạn</option>
+                  <option value="8">Tỉnh Tuyên Quang</option>
+                  <option value="10">Tỉnh Lào Cai</option>
+                  <option value="11">Tỉnh Điện Biên</option>
+                  <option value="12">Tỉnh Lai Châu</option>
+                  <option value="14">Tỉnh Sơn La</option>
+                  <option value="15">Tỉnh Yên Bái</option>
+                  <option value="17">Tỉnh Hoà Bình</option>
+                  <option value="19">Tỉnh Thái Nguyên</option>
+                  <option value="20">Tỉnh Lạng Sơn</option>
+                  <option value="22">Tỉnh Quảng Ninh</option>
+                  <option value="24">Tỉnh Bắc Giang</option>
+                  <option value="25">Tỉnh Phú Thọ</option>
+                  <option value="26">Tỉnh Vĩnh Phúc</option>
+                  <option value="27">Tỉnh Bắc Ninh</option>
+                  <option value="30">Tỉnh Hải Dương</option>
+                  <option value="31">Thành phố Hải Phòng</option>
+                  <option value="33">Tỉnh Hưng Yên</option>
+                  <option value="34">Tỉnh Thái Bình</option>
+                  <option value="35">Tỉnh Hà Nam</option>
+                  <option value="36">Tỉnh Nam Định</option>
+                  <option value="37">Tỉnh Ninh Bình</option>
+                  <option value="38">Tỉnh Thanh Hóa</option>
+                  <option value="40">Tỉnh Nghệ An</option>
+                  <option value="42">Tỉnh Hà Tĩnh</option>
+                  <option value="44">Tỉnh Quảng Bình</option>
+                  <option value="45">Tỉnh Quảng Trị</option>
+                  <option value="46">Tỉnh Thừa Thiên Huế</option>
+                  <option value="48">Thành phố Đà Nẵng</option>
+                  <option value="49">Tỉnh Quảng Nam</option>
+                  <option value="51">Tỉnh Quảng Ngãi</option>
+                  <option value="52">Tỉnh Bình Định</option>
+                  <option value="54">Tỉnh Phú Yên</option>
+                  <option value="56">Tỉnh Khánh Hòa</option>
+                  <option value="58">Tỉnh Ninh Thuận</option>
+                  <option value="60">Tỉnh Bình Thuận</option>
+                  <option value="62">Tỉnh Kon Tum</option>
+                  <option value="64">Tỉnh Gia Lai</option>
+                  <option value="66">Tỉnh Đắk Lắk</option>
+                  <option value="67">Tỉnh Đắk Nông</option>
+                  <option value="68">Tỉnh Lâm Đồng</option>
+                  <option value="70">Tỉnh Bình Phước</option>
+                  <option value="72">Tỉnh Tây Ninh</option>
+                  <option value="74">Tỉnh Bình Dương</option>
+                  <option value="75">Tỉnh Đồng Nai</option>
+                  <option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+                  <option value="79">Thành phố Hồ Chí Minh</option>
+                  <option value="80">Tỉnh Long An</option>
+                  <option value="82">Tỉnh Tiền Giang</option>
+                  <option value="83">Tỉnh Bến Tre</option>
+                  <option value="84">Tỉnh Trà Vinh</option>
+                  <option value="86">Tỉnh Vĩnh Long</option>
+                  <option value="87">Tỉnh Đồng Tháp</option>
+                  <option value="89">Tỉnh An Giang</option>
+                  <option value="91">Tỉnh Kiên Giang</option>
+                  <option value="92">Thành phố Cần Thơ</option>
+                  <option value="93">Tỉnh Hậu Giang</option>
+                  <option value="94">Tỉnh Sóc Trăng</option>
+                  <option value="95">Tỉnh Bạc Liêu</option>
+                  <option value="96">Tỉnh Cà Mau</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>STT</th>
+                    <th>Loại</th>
+                    <th>Tên hàng</th>
+                    <th>Số lượng</th>
+                    <th>Trọng lượng (kg)</th>
+                    <th>Giá (vnđ)</th>
+                    <th>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-plus"></i> Thêm hàng
+                      </button>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr-item">
+                    <td>1</td>
+                    <td>
+                      <select class="form-control" id="sel1">
+                        <option>Hàng nhẹ</option>
+                        <option>Hàng nguyên khối</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        placeholder="Nhập tên hàng"
+                        type="text"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        min="1"
+                        step="1"
+                        value="1"
+                        type="number"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        min="0.5"
+                        value="0"
+                        type="number"
+                      />
+                    </td>
+                    <td class="gia">0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex flex-column align-items-end">
+                <div class="font-weight-bold">Tổng sản phẩm: 1</div>
+                <div class="font-weight-bold">Tổng cước phí: 0đ</div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Huỷ
+            </button>
+            <button type="button" class="btn btn-primary">Thêm đơn hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal edit -->
+    <div
+      class="modal fade"
+      id="edit"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="min-width: 90%" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <i class="fa fa-edit text-warning" style="font-size: 1.2rem"></i>
+              &nbsp; &nbsp; Sửa đơn hàng
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="font-weight-bold mb-3">Nhân viên sửa: Nguyen Van A</div>
+            <div class="user-order">
+              <div class="form-group">
+                <label for="sdt-ng">SĐT người gửi:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập số điện thoại người gửi"
+                  id="sdt-ng"
+                  value="0988833999"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">Họ tên người gửi:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập họ tên người gửi"
+                  id="sdt-ng"
+                  value="Nguyễn Thị E"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">CMND người gửi:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CMND người gưi"
+                  id="sdt-ng"
+                  value="215483999"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sel1">Văn Phòng gửi:</label>
+                <select class="form-control" name="TP" id="TP" disabled>
+                  <option value="1">Thành phố Hà Nội</option>
+                  <option value="2">Tỉnh Hà Giang</option>
+                  <option value="4">Tỉnh Cao Bằng</option>
+                  <option value="6">Tỉnh Bắc Kạn</option>
+                  <option value="8">Tỉnh Tuyên Quang</option>
+                  <option value="10">Tỉnh Lào Cai</option>
+                  <option value="11">Tỉnh Điện Biên</option>
+                  <option value="12">Tỉnh Lai Châu</option>
+                  <option value="14">Tỉnh Sơn La</option>
+                  <option value="15">Tỉnh Yên Bái</option>
+                  <option value="17">Tỉnh Hoà Bình</option>
+                  <option value="19">Tỉnh Thái Nguyên</option>
+                  <option value="20">Tỉnh Lạng Sơn</option>
+                  <option value="22">Tỉnh Quảng Ninh</option>
+                  <option value="24">Tỉnh Bắc Giang</option>
+                  <option value="25">Tỉnh Phú Thọ</option>
+                  <option value="26">Tỉnh Vĩnh Phúc</option>
+                  <option value="27">Tỉnh Bắc Ninh</option>
+                  <option value="30">Tỉnh Hải Dương</option>
+                  <option value="31">Thành phố Hải Phòng</option>
+                  <option value="33">Tỉnh Hưng Yên</option>
+                  <option value="34">Tỉnh Thái Bình</option>
+                  <option value="35">Tỉnh Hà Nam</option>
+                  <option value="36">Tỉnh Nam Định</option>
+                  <option value="37">Tỉnh Ninh Bình</option>
+                  <option value="38">Tỉnh Thanh Hóa</option>
+                  <option value="40">Tỉnh Nghệ An</option>
+                  <option value="42">Tỉnh Hà Tĩnh</option>
+                  <option value="44">Tỉnh Quảng Bình</option>
+                  <option value="45">Tỉnh Quảng Trị</option>
+                  <option value="46">Tỉnh Thừa Thiên Huế</option>
+                  <option value="48">Thành phố Đà Nẵng</option>
+                  <option value="49">Tỉnh Quảng Nam</option>
+                  <option value="51" selected>Tỉnh Quảng Ngãi</option>
+                  <option value="52">Tỉnh Bình Định</option>
+                  <option value="54">Tỉnh Phú Yên</option>
+                  <option value="56">Tỉnh Khánh Hòa</option>
+                  <option value="58">Tỉnh Ninh Thuận</option>
+                  <option value="60">Tỉnh Bình Thuận</option>
+                  <option value="62">Tỉnh Kon Tum</option>
+                  <option value="64">Tỉnh Gia Lai</option>
+                  <option value="66">Tỉnh Đắk Lắk</option>
+                  <option value="67">Tỉnh Đắk Nông</option>
+                  <option value="68">Tỉnh Lâm Đồng</option>
+                  <option value="70">Tỉnh Bình Phước</option>
+                  <option value="72">Tỉnh Tây Ninh</option>
+                  <option value="74">Tỉnh Bình Dương</option>
+                  <option value="75">Tỉnh Đồng Nai</option>
+                  <option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+                  <option value="79">Thành phố Hồ Chí Minh</option>
+                  <option value="80">Tỉnh Long An</option>
+                  <option value="82">Tỉnh Tiền Giang</option>
+                  <option value="83">Tỉnh Bến Tre</option>
+                  <option value="84">Tỉnh Trà Vinh</option>
+                  <option value="86">Tỉnh Vĩnh Long</option>
+                  <option value="87">Tỉnh Đồng Tháp</option>
+                  <option value="89">Tỉnh An Giang</option>
+                  <option value="91">Tỉnh Kiên Giang</option>
+                  <option value="92">Thành phố Cần Thơ</option>
+                  <option value="93">Tỉnh Hậu Giang</option>
+                  <option value="94">Tỉnh Sóc Trăng</option>
+                  <option value="95">Tỉnh Bạc Liêu</option>
+                  <option value="96">Tỉnh Cà Mau</option>
+                </select>
+              </div>
+            </div>
+            <div class="user-order">
+              <div class="form-group">
+                <label for="sdt-ng">SĐT người nhận:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập số điện thoại người nhận"
+                  id="sdt-ng"
+                  value="034882132"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">Họ tên người nhận:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập họ tên người nhận"
+                  id="sdt-ng"
+                  value="Nguyễn Văn D"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sdt-ng">CMND người nhận:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CMND người nhận"
+                  id="sdt-ng"
+                  value="215421983"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sel1">Văn Phòng nhận:</label>
+                <select class="form-control" name="TP" id="TP" disabled>
+                  <option value="1">Thành phố Hà Nội</option>
+                  <option value="2">Tỉnh Hà Giang</option>
+                  <option value="4">Tỉnh Cao Bằng</option>
+                  <option value="6">Tỉnh Bắc Kạn</option>
+                  <option value="8">Tỉnh Tuyên Quang</option>
+                  <option value="10">Tỉnh Lào Cai</option>
+                  <option value="11">Tỉnh Điện Biên</option>
+                  <option value="12">Tỉnh Lai Châu</option>
+                  <option value="14">Tỉnh Sơn La</option>
+                  <option value="15">Tỉnh Yên Bái</option>
+                  <option value="17">Tỉnh Hoà Bình</option>
+                  <option value="19">Tỉnh Thái Nguyên</option>
+                  <option value="20">Tỉnh Lạng Sơn</option>
+                  <option value="22">Tỉnh Quảng Ninh</option>
+                  <option value="24">Tỉnh Bắc Giang</option>
+                  <option value="25">Tỉnh Phú Thọ</option>
+                  <option value="26">Tỉnh Vĩnh Phúc</option>
+                  <option value="27">Tỉnh Bắc Ninh</option>
+                  <option value="30">Tỉnh Hải Dương</option>
+                  <option value="31">Thành phố Hải Phòng</option>
+                  <option value="33">Tỉnh Hưng Yên</option>
+                  <option value="34">Tỉnh Thái Bình</option>
+                  <option value="35">Tỉnh Hà Nam</option>
+                  <option value="36">Tỉnh Nam Định</option>
+                  <option value="37">Tỉnh Ninh Bình</option>
+                  <option value="38">Tỉnh Thanh Hóa</option>
+                  <option value="40">Tỉnh Nghệ An</option>
+                  <option value="42">Tỉnh Hà Tĩnh</option>
+                  <option value="44">Tỉnh Quảng Bình</option>
+                  <option value="45">Tỉnh Quảng Trị</option>
+                  <option value="46">Tỉnh Thừa Thiên Huế</option>
+                  <option value="48">Thành phố Đà Nẵng</option>
+                  <option value="49">Tỉnh Quảng Nam</option>
+                  <option value="51">Tỉnh Quảng Ngãi</option>
+                  <option value="52">Tỉnh Bình Định</option>
+                  <option value="54">Tỉnh Phú Yên</option>
+                  <option value="56">Tỉnh Khánh Hòa</option>
+                  <option value="58">Tỉnh Ninh Thuận</option>
+                  <option value="60">Tỉnh Bình Thuận</option>
+                  <option value="62">Tỉnh Kon Tum</option>
+                  <option value="64">Tỉnh Gia Lai</option>
+                  <option value="66">Tỉnh Đắk Lắk</option>
+                  <option value="67">Tỉnh Đắk Nông</option>
+                  <option value="68">Tỉnh Lâm Đồng</option>
+                  <option value="70">Tỉnh Bình Phước</option>
+                  <option value="72">Tỉnh Tây Ninh</option>
+                  <option value="74">Tỉnh Bình Dương</option>
+                  <option value="75">Tỉnh Đồng Nai</option>
+                  <option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+                  <option value="79" selected>Thành phố Hồ Chí Minh</option>
+                  <option value="80">Tỉnh Long An</option>
+                  <option value="82">Tỉnh Tiền Giang</option>
+                  <option value="83">Tỉnh Bến Tre</option>
+                  <option value="84">Tỉnh Trà Vinh</option>
+                  <option value="86">Tỉnh Vĩnh Long</option>
+                  <option value="87">Tỉnh Đồng Tháp</option>
+                  <option value="89">Tỉnh An Giang</option>
+                  <option value="91">Tỉnh Kiên Giang</option>
+                  <option value="92">Thành phố Cần Thơ</option>
+                  <option value="93">Tỉnh Hậu Giang</option>
+                  <option value="94">Tỉnh Sóc Trăng</option>
+                  <option value="95">Tỉnh Bạc Liêu</option>
+                  <option value="96">Tỉnh Cà Mau</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>STT</th>
+                    <th>Loại</th>
+                    <th>Tên hàng</th>
+                    <th>Số lượng</th>
+                    <th>Trọng lượng (kg)</th>
+                    <th>Giá (vnđ)</th>
+                    <!-- <th>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-plus"></i> Thêm hàng
+                      </button>
+                    </th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr-item">
+                    <td>1</td>
+                    <td>
+                      <select class="form-control" id="sel1" disabled>
+                        <option>Hàng nhẹ</option>
+                        <option selected>Hàng nguyên khối</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        placeholder="Nhập tên hàng"
+                        type="text"
+                        value="lúa"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        min="1"
+                        step="1"
+                        value="1"
+                        type="number"
+                        disabled
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        min="0.5"
+                        value="100"
+                        type="number"
+                        disabled
+                      />
+                    </td>
+                    <td class="gia">110,000</td>
+                    <!-- <td>
+                      <button class="btn btn-danger">
+                        <i class="fa fa-remove"></i>
+                      </button>
+                    </td> -->
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex flex-column align-items-end">
+                <div class="font-weight-bold">Tổng sản phẩm: 1</div>
+                <div class="font-weight-bold">Tổng cước phí: 110,000đ</div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Huỷ
+            </button>
+            <button type="button" class="btn btn-warning">Sửa đơn hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal len hang -->
+    <div
+      class="modal fade"
+      id="lenHang"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="min-width: 90%" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Xác nhận giao hàng
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="font-weight-bold mb-3">Nhân viên: Nguyen Van A</div>
+            <div>
+              <h3>Đơn 1. Mã: GMTaxc23zz</h3>
+              <div>
+                <p><strong>Kho gửi:</strong> Quảng Ngãi - Ngày 07/12/2020</p>
+                <p>
+                  <strong>Người gửi:</strong> Nguyễn Thị E - SĐT: 0988833999 -
+                  CMND: 215483999
+                </p>
+                <p>
+                  <strong> Người nhận:</strong> Nguyễn Văn D - SĐT: 034882132 -
+                  CMND: 215421983
+                </p>
+                <em>Chi tiết đơn hàng</em>
+                <table class="table">
+                  <thead>
+                    <th>STT</th>
+                    <th>Loại</th>
+                    <th>Tên hàng</th>
+                    <th>Số lượng</th>
+                    <th>Trọng lượng</th>
+                    <th>Giá (vnđ)</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Hàng nguyên khối</td>
+                      <td>Lúa</td>
+                      <td>1</td>
+                      <td>100</td>
+                      <td>110,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                  <strong>Tổng: 110,000 đ</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Huỷ
+            </button>
+            <button type="button" class="btn btn-success">Giao hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal lịch sử -->
+    <div
+      class="modal fade"
+      id="history"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="min-width: 90%" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Xác nhận các đơn hàng lên xe
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="font-weight-bold mb-3">Nhân viên: Nguyen Van A</div>
+            <div>
+              <h3>Đơn 1. Mã: GMTaxc23zz</h3>
+              <div>
+                <p><strong>Kho gửi:</strong> Quảng Ngãi - Ngày 07/12/2020</p>
+                <p>
+                  <strong>Người gửi:</strong> Nguyễn Thị E - SĐT: 0988833999 -
+                  CMND: 215483999
+                </p>
+                <p>
+                  <strong> Người nhận:</strong> Nguyễn Văn D - SĐT: 034882132 -
+                  CMND: 215421983
+                </p>
+                <em>Lịch sử đơn hàng</em>
+                <table class="table">
+                  <thead>
+                    <th>STT</th>
+                    <th>Thời gian</th>
+                    <th>Tác vụ</th>
+                    <th>Nội dung</th>
+                    <th>Nhân viên</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>14:02 07/12/2020</td>
+                      <td>Tạo đơn hàng</td>
+                      <td>Đơn hàng gửi từ Quảng Ngãi đến Phú Yên</td>
+                      <td>Nguyen Van A</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>16:04 07/12/2020</td>
+                      <td>Lên hàng</td>
+                      <td>
+                        Đơn hàng được lên xe: BXH200 giờ khởi hành 17:00
+                        07/12/2020
+                      </td>
+                      <td>Nguyen Van A</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>06:04 08/12/2020</td>
+                      <td>Nhập hàng</td>
+                      <td>Đơn hàng đã đến văn phòng nhận</td>
+                      <td>Nguyen Van A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Huỷ
+            </button>
+            <button type="button" class="btn btn-primary">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal xoa -->
+    <div class="modal fade" id="xoa">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Huỷ đơn hàng</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Bạn có chắc chắn muốn huỷ đơn hàng
+            <strong>GMTaxc23zz</strong> không?
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Huỷ</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Xoá
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
