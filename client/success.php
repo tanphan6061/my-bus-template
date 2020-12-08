@@ -66,6 +66,12 @@ include "../include/header.php";
                                     </div>
                                     <div class="col-6 py-1">
                                         <div class="row">
+                                            <div class="col-3">Biển số xe:</div>
+                                            <div class="col-9">14B-010129</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 py-1">
+                                        <div class="row">
                                             <div class="col-3">Số lượng ghế:</div>
                                             <div class="col-9">2</div>
                                         </div>

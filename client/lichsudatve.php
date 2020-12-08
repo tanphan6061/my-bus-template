@@ -39,6 +39,7 @@ include "../include/header.php";
                                             <option value="0">Chọn trạng thái</option>
                                             <option value="1">Đã thanh toán</option>
                                             <option value="2">Chưa thanh toán</option>
+                                            <option value="2">Đã hủy</option>
                                         </select>
                                     </div>
                                 </div>
@@ -83,7 +84,7 @@ include "../include/header.php";
                                             <td>250.000</td>
                                             <td>01:12 09/12/2020</td>
                                             <td>thẻ VISA</td>
-                                            <td>Chờ thanh toán</td>
+                                            <td>Đã thanh toán</td>
                                             <td>
                                                 <a href="chitietve.php" class="btn btn-outline-primary"><i class="fa fa-eye"></i>
                                                 </a>
