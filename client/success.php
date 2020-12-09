@@ -99,7 +99,7 @@ include "../include/header.php";
                             </div>
                             <div class="d-flex justify-content-end align-items-end flex-column mt-3">
                                 <div class="h4 font-weight-bold">Tổng tiền</div>
-                                <div class="h5 text-danger">340,000 <sup>đ</sup></div>
+                                <div class="h5 text-danger">250,000 <sup>đ</sup></div>
                             </div>
                         </div>
                     </div>

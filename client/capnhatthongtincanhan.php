@@ -58,10 +58,12 @@ include "../include/header.php";
                 'Cập nhật thành công!',
                 'Bạn đã cập nhật thông tin thành công!',
                 'success'
-            )
-            setTimeout(() => {
-                window.location.href = "thongtincanhan.php";
-            }, 3000);
+            ).then(() => {
+                setTimeout(() => {
+                    window.location.href = "thongtincanhan.php";
+                }, 0);
+            })
+
         })
 
     </script>
