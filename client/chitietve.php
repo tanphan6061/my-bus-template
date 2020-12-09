@@ -15,7 +15,7 @@ include "../include/header.php";
                                     <tbody>
                                     <tr>
                                         <td>Mã vé</td>
-                                        <td colspan="5"><strong class="text-primary">GJTF8K</strong></td>
+                                        <td colspan="5"><strong class="text-primary">35DGZX</strong></td>
                                     </tr>
                                     <tr>
                                         <td>Họ tên</td>
@@ -26,7 +26,7 @@ include "../include/header.php";
                                         <td><strong><?php echo $_SESSION['me']['email'] ?></strong></td>
                                         <td>SĐT</td>
                                         <td><strong><?php echo $_SESSION['me']['SDT'] ?></strong></td>
-                                        <td>CMND</td>
+                                        <td>CMND/CC</td>
                                         <td><strong><?php echo $_SESSION['me']['CMND'] ?></strong></td>
                                     </tr>
                                     <tr>
@@ -38,6 +38,8 @@ include "../include/header.php";
                                         <td><strong>02:00</strong></td>
                                     </tr>
                                     <tr>
+                                        <td>Biển xố xe</td>
+                                        <td><strong>14B-010129</strong></td>
                                         <td>Số ghế</td>
                                         <td><strong>A01, A02</strong></td>
                                         <td>Điểm lên xe</td>
@@ -57,7 +59,7 @@ include "../include/header.php";
                                     <tr>
                                         <td>Trạng thái</td>
                                         <td colspan="5">
-                                            <span style="color: blue; font-weight: 600;">Chờ thanh toán</span>
+                                            <span style="color: blue; font-weight: 600;">Đã thanh toán</span>
                                         </td>
                                     </tr>
                                     </tbody>
