@@ -60,13 +60,13 @@
                     /></label>
                   </div>
                   <div class="form-group mt-3">
-                    <a
-                      href="./don-hang/index.html"
+                    <button
+                      onclick="onSubmit()"
                       type="submit"
                       class="btn btn-primary btn-block"
                     >
                       Đăng nhập
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -75,5 +75,15 @@
         </div>
       </div>
     </div>
+    <script>
+      const username = document.getElementById('taikhoan');
+      const onSubmit = () => {
+        if (username.value.indexOf('ve') > -1) window.location.href = './ve';
+        else if (username.value.indexOf('hang') > -1)
+          window.location.href = './don-hang';
+        else if (username.value.indexOf('hethong') > -1)
+          window.location.href = './he-thong';
+      };
+    </script>
   </body>
 </html>
