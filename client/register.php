@@ -14,11 +14,13 @@ include "../include/header.php";
                             <form action="login.php">
                                 <div class="form-group">
                                     <label for="inputName">Họ tên <span class="text-danger">*</span></label>
-                                    <input type="text" value="Lê Bống" class="form-control" id="inputName" placeholder="Điền họ tên">
+                                    <input type="text" value="Lê Bống" class="form-control" id="inputName"
+                                           placeholder="Điền họ tên">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputEmail4">Email <span class="text-danger">*</span></label>
-                                    <input type="email" value="lebong.pikachu69@gmail.com" class="form-control" id="inputEmail4" placeholder="Email">
+                                    <input type="email" value="lebong.pikachu69@gmail.com" class="form-control"
+                                           id="inputEmail4" placeholder="Email">
                                 </div>
                                 <div class="form-row">
 
@@ -41,15 +43,17 @@ include "../include/header.php";
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputID">Số CMND/CC <span class="text-danger">*</span></label>
-                                        <input type="text" value="123456789" class="form-control" id="inputID" placeholder="Điền số CMND">
+                                        <input type="text" value="123456789" class="form-control" id="inputID"
+                                               placeholder="Điền số CMND">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputAddress">Địa chỉ <span class="text-danger">*</span></label>
-                                    <input type="text" value="70/10 Tô Ký, P.TCH, Q.12, TP.HCM" class="form-control" id="inputAddress"
+                                    <input type="text" value="70/10 Tô Ký, P.TCH, Q.12, TP.HCM" class="form-control"
+                                           id="inputAddress"
                                            placeholder="1234 Main St">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                <button id="btnRegister" type="submit" class="btn btn-primary">Đăng ký</button>
                             </form>
                         </div>
                     </div>
@@ -61,6 +65,19 @@ include "../include/header.php";
             <!--        </div>-->
         </div>
     </main>
+    <script>
+        let btnRegister = $('#btnRegister');
+        btnRegister.click(function (e) {
+            e.preventDefault();
+            Swal.fire(
+                'Thành công',
+                'Bạn đã đăng ký tài khoản thành công!',
+                'success'
+            ).then(() => {
+                window.location.href = "login.php";
+            })
+        })
+    </script>
 <?php
 include "../include/footer.php";
 ?>

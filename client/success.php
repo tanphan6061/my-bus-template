@@ -110,8 +110,8 @@ include "../include/header.php";
     </main>
     <script>
         Swal.fire(
-            'Thanh toán thành công!',
-            'Bạn đã thanh toán dịch vụ thành công!',
+            'Thành công!',
+            'Bạn đã thanh toán dịch vụ thành công',
             'success'
         )
     </script>
