@@ -65,13 +65,13 @@
         </button>
         <div class="navbar-collapse collapse" id="navb" style="">
           <ul class="navbar-nav mr-auto ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./">Tổng quan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./quan-li-ve.html">Quản Lí Vé</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="./lich-su.html">Lịch Sử Vé</a>
             </li>
           </ul>
@@ -107,26 +107,69 @@
         </div>
       </nav>
     </header>
-    <div class="container">
-      <h2 class="mt-5 mb-4">Văn phòng: Tp. Hồ Chí Minh</h2>
-      <div class="d-flex list-overall">
-        <div class="border py-3 px-4 radius rounded">
-          <h3 class="border-bottom">Tổng doanh thu</h3>
-          <div>537,520,000đ</div>
-          <hr />
-          <div>Tổng 5000 vé</div>
+    <div class="container bg-white px-3 py-5 rounded border">
+      <h2 class="">Lịch Sử Vé Văn phòng: Tp. Hồ Chí Minh</h2>
+      <div class="mt-5">
+        <div class="d-flex my-3">
+          <input
+            placeholder="Lọc theo Mã vé, Xe, Hành Động hoặc người thực hiện"
+            type="text"
+            class="form-control"
+          />
+          <button class="btn btn-primary">Search</button>
         </div>
-        <div class="border py-3 px-4 radius rounded">
-          <h3 class="border-bottom">Doanh thu 30 ngày</h3>
-          <div>20,420,000 đ</div>
-          <div>
-            thay đổi 500,000đ so với 30 ngày trước
-            <i class="fa fa-arrow-up text-success"></i>
-          </div>
-          <hr />
-          <div>Tổng 400 vé</div>
-        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Thời gian thực hiện</th>
+              <th>Mã Vé</th>
+              <th>Họ tên</th>
+              <th>Xe</th>
+              <th>Thời gian khởi hành</th>
+              <th>Số Ghế</th>
+              <th>Hành Động</th>
+              <th>Người thực hiện</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>06:32 09/12/2020</td>
+              <td>DZX123</td>
+              <td>Nguyễn Văn A</td>
+              <td>BXH201</td>
+              <td>09:00 09/12/2020</td>
+              <td>A01</td>
+              <td>Đặt vé</td>
+              <td>NV: Nguyen Quoc B</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>07:32 08/12/2020</td>
+              <td>DZX213</td>
+              <td>Nguyễn Văn B</td>
+              <td>BXH203</td>
+              <td>12:00 08/12/2020</td>
+              <td>A01</td>
+              <td>Đặt vé</td>
+              <td>KH: Nguyễn Văn B</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>03:32 08/12/2020</td>
+              <td>DZX032</td>
+              <td>Nguyễn Văn C</td>
+              <td>BXH205</td>
+              <td>06:00 09/12/2020</td>
+              <td>A01, A02</td>
+              <td>Huỷ vé</td>
+              <td>NV: Nguyễn Quoc B</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <div></div>
     </div>
   </body>
 </html>
