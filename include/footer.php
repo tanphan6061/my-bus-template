@@ -11,11 +11,9 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
                 <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                <h6 class="text-uppercase font-weight-bold">TNZ CORP</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                    consectetur
-                    adipisicing elit.</p>
+                <p>Hiện tại TNZ CORP là một công ty không có thực nên không có gì để mô tả.</p>
 
             </div>
             <!-- Grid column -->
@@ -24,21 +22,17 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                 <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Products</h6>
+                <h6 class="text-uppercase font-weight-bold">Sản phẩm</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a class="dark-grey-text" href="#!">MDBootstrap</a>
-                </p>
-                <p>
-                    <a class="dark-grey-text" href="#!">MDWordPress</a>
-                </p>
-                <p>
-                    <a class="dark-grey-text" href="#!">BrandFlow</a>
-                </p>
-                <p>
-                    <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
-                </p>
-
+<!--                <p>-->
+<!--                    <a class="dark-grey-text" href="#!">Hệ thống bán ve xe</a>-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    <a class="dark-grey-text" href="#!">Hệ thống bán vé sự kiện</a>-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    <a class="dark-grey-text" href="#!">Hệ thống đặt lịch khách sạn</a>-->
+<!--                </p>-->
             </div>
             <!-- Grid column -->
 
@@ -46,19 +40,19 @@
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
                 <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                <h6 class="text-uppercase font-weight-bold">HỆ THỐNG</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                    <a class="dark-grey-text" href="#!">Your Account</a>
+                    <a class="dark-grey-text" href="#!">Về chúng tôi</a>
                 </p>
                 <p>
-                    <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                    <a class="dark-grey-text" href="#!">Thông báo</a>
                 </p>
+<!--                <p>-->
+<!--                    <a class="dark-grey-text" href="#!">Liên hệ</a>-->
+<!--                </p>-->
                 <p>
-                    <a class="dark-grey-text" href="#!">Shipping Rates</a>
-                </p>
-                <p>
-                    <a class="dark-grey-text" href="#!">Help</a>
+                    <a class="dark-grey-text" href="#!">Trợ giúp</a>
                 </p>
 
             </div>

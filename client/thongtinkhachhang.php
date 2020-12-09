@@ -29,7 +29,7 @@ include "../include/header.php";
                                     <input type="text" class="form-control" id="inputAddress" placeholder="Điền địa chỉ">
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required checked>
                                     <label class="form-check-label" for="exampleCheck1">Bạn đã chấp nhận điều khoản của chúng tôi</label>
                                 </div>
                             </form>
@@ -41,14 +41,14 @@ include "../include/header.php";
                         <div class="card-body">
                             <div class="d-flex flex-column justify-content-center">
                                 <p class="text-uppercase h5 text-danger text-center font-weight-bold">Điều khoản và lưu ý</p>
-                                <p>(*) Quý khách vui lòng mang email có chứa mã vé đến văn phòng để đổi vé lên xe trước giờ xuất
-                                    bến ít nhất 60 phút để chúng tôi trung chuyển.</p>
+<!--                                <p>(*) Quý khách vui lòng mang email có chứa mã vé đến văn phòng để đổi vé lên xe trước giờ xuất-->
+<!--                                    bến ít nhất 60 phút để chúng tôi trung chuyển.</p>-->
                                 <p>(*) Thông tin hành khách phải chính xác, nếu không sẽ không thể lên xe hoặc hủy/đổi vé.</p>
                                 <p>(*) Quý khách không được đổi/trả vé vào các ngày Lễ Tết (ngày thường quý khách được quyền
                                     chuyển đổi hoặc hủy vé một lần duy nhất trước giờ xe chạy 24 giờ), phí hủy vé 10%.</p>
-                                <p>(*) Nếu quý khách có nhu cầu trung chuyển, vui lòng liên hệ số điện thoại 1900 1000 thấy trước khi
-                                    đặt vé. Chúng tôi không đón/trung chuyển tại những điểm xe trung chuyển không thể tới
-                                    được.</p>
+<!--                                <p>(*) Nếu quý khách có nhu cầu trung chuyển, vui lòng liên hệ số điện thoại 1900 1000 thấy trước khi-->
+<!--                                    đặt vé. Chúng tôi không đón/trung chuyển tại những điểm xe trung chuyển không thể tới-->
+<!--                                    được.</p>-->
 
                             </div>
                         </div>

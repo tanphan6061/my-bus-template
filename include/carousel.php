@@ -11,10 +11,9 @@
                  alt="First slide">
             <div class="container">
                 <div class="carousel-caption text-left text-dark">
-                    <h1>Example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <h1 style="text-shadow: 1px 1px #fff;">ĐẶT VÉ NGAY CÓ VÉ TRONG TAY</h1>
+                    <p style="text-shadow: 1px 1px #fff;">Nhanh như tốc độ khi người yêu cũ block bạn</p>
+                    <p><a class="btn btn-lg btn-primary" href="../client/register.php" role="button">Đăng ký</a></p>
                 </div>
             </div>
         </div>

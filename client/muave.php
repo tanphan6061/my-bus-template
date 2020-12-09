@@ -8,14 +8,14 @@ include "../include/header.php";
                     <div class="card">
                         <div class="card-body">
                             <p class="h5 text-danger text-xl-center">01:00 09/12/2020</p>
-                            <p class="h5 text-xl-center">Sài Gòn → Hà Nội</p>
+                            <p class="h5 text-xl-center">VP Sài Gòn → VP Hà Nội</p>
                             <form action="">
                                 <div class="form-check">
                                     <label for="DiInput">Giờ khởi hành</label>
                                     <select class="form-control" id="DiInput">
-                                        <option value="1">06:00</option>
-                                        <option value="2">12:00</option>
-                                        <option value="2">18:00</option>
+                                        <option value="1">06:00 (Giường)</option>
+                                        <option value="2">12:00 (Ghế)</option>
+                                        <option value="2">18:00 (Giường)</option>
                                     </select>
                                 </div>
                                 <div class="form-check">
@@ -36,11 +36,11 @@ include "../include/header.php";
                                             <p class="text-center font-weight-bold">Tầng 1</p>
                                             <div class="form-row">
                                                 <div class="form-check flex-grow-1">
-                                                    <input class="form-check-input" type="checkbox" value="" id="A01">
+                                                    <input class="form-check-input" type="checkbox" value="" id="A01" checked>
                                                     <label class="form-check-label" for="A01">A01 </label>
                                                 </div>
                                                 <div class="form-check flex-grow-1">
-                                                    <input class="form-check-input" type="checkbox" value="" id="A02">
+                                                    <input class="form-check-input" type="checkbox" value="" id="A02" checked                   >
                                                     <label class="form-check-label" for="A02">A02 </label>
                                                 </div>
                                                 <div class="form-check flex-grow-1">
