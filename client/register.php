@@ -40,7 +40,7 @@ include "../include/header.php";
                                                placeholder="Điền số điện thoại">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputID">Số CMND <span class="text-danger">*</span></label>
+                                        <label for="inputID">Số CMND/CC <span class="text-danger">*</span></label>
                                         <input type="text" value="123456789" class="form-control" id="inputID" placeholder="Điền số CMND">
                                     </div>
                                 </div>

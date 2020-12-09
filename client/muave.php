@@ -7,8 +7,8 @@ include "../include/header.php";
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
-                            <p class="h5 text-danger text-xl-center">01:00 09/12/2020</p>
-                            <p class="h5 text-xl-center">VP Sài Gòn → VP Hà Nội</p>
+                            <p class="h5 text-danger text-xl-center">06:00 09/12/2020</p>
+                             <p class="h5 text-xl-center">VP Sài Gòn → VP Hà Nội</p>
                             <form action="">
                                 <div class="form-check">
                                     <label for="DiInput">Giờ khởi hành</label>

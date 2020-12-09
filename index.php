@@ -20,8 +20,8 @@ include "include/header.php" ?>
                             <div class="form-check">
                                 <label for="DenInput">Điểm đến</label>
                                 <select name="DiemDen" class="form-control mx-sm-3" id="DenInput">
-                                    <option value="1">VP Hà Nội</option>
-                                    <option value="2">VP Sài Gòn</option>
+                                    <option value="1" selected>VP Hà Nội</option>
+<!--                                    <option value="2">VP Sài Gòn</option>-->
                                 </select>
                             </div>
                             <div class="form-check">

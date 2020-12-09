@@ -11,22 +11,22 @@ include "../include/header.php";
                             <form>
                                 <div class="form-group">
                                     <label for="inputName">Họ và tên khách hàng <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp"
+                                    <input type="text" value="<?php echo $_SESSION['me']['ho_ten']?>" class="form-control" id="inputName" aria-describedby="nameHelp"
                                            placeholder="Điền họ tên">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPhone">Số điện thoại <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="inputPhone" aria-describedby="PhoneHelp"
+                                    <input type="text" value="<?php echo $_SESSION['me']['SDT']?>" class="form-control" id="inputPhone" aria-describedby="PhoneHelp"
                                            placeholder="Điền số điện thoại">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <input type="email" value="<?php echo $_SESSION['me']['email']?>" class="form-control" id="exampleInputEmail1"
                                            aria-describedby="emailHelp" placeholder="Điền Email">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputAddress">Địa chỉ <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="Điền địa chỉ">
+                                    <input type="text" value="<?php echo $_SESSION['me']['dia_chi']?>" class="form-control" id="inputAddress" placeholder="Điền địa chỉ">
                                 </div>
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" required checked>
@@ -44,11 +44,10 @@ include "../include/header.php";
 <!--                                <p>(*) Quý khách vui lòng mang email có chứa mã vé đến văn phòng để đổi vé lên xe trước giờ xuất-->
 <!--                                    bến ít nhất 60 phút để chúng tôi trung chuyển.</p>-->
                                 <p>(*) Thông tin hành khách phải chính xác, nếu không sẽ không thể lên xe hoặc hủy/đổi vé.</p>
-                                <p>(*) Quý khách không được đổi/trả vé vào các ngày Lễ Tết (ngày thường quý khách được quyền
-                                    chuyển đổi hoặc hủy vé một lần duy nhất trước giờ xe chạy 24 giờ), phí hủy vé 10%.</p>
-<!--                                <p>(*) Nếu quý khách có nhu cầu trung chuyển, vui lòng liên hệ số điện thoại 1900 1000 thấy trước khi-->
-<!--                                    đặt vé. Chúng tôi không đón/trung chuyển tại những điểm xe trung chuyển không thể tới-->
-<!--                                    được.</p>-->
+                                <p>(*) Ngày thường quý khách được quyền chuyển đổi hoặc hủy vé một lần duy nhất trước giờ xe chạy 24 giờ, phí hủy vé 10%.</p>
+                                <p>(*) Nếu quý khách có nhu cầu trung chuyển, vui lòng liên hệ số điện thoại 1900 1000 thấy trước khi
+                                    đặt vé. Chúng tôi không đón/trung chuyển tại những điểm xe trung chuyển không thể tới
+                                    được.</p>
 
                             </div>
                         </div>
