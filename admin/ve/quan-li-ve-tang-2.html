@@ -32,6 +32,19 @@
     />
     <link rel="stylesheet" href="../../assets/css/font-awesome.css" />
     <script src="../../assets/js/sweetalert.min.js"></script>
+    <script src="../../assets/js/gijgo.min.js" type="text/javascript"></script>
+    <link
+      href="../../assets/css/gijgo.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../../assets/css/carousel.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../../assets/css/font-awesome.css" />
+    <script src="../../assets/js/sweetalert.min.js"></script>
     <style>
       .user-order {
         display: flex;
@@ -53,7 +66,7 @@
     </style>
   </head>
   <body class="bg-light p-0">
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="./">Mybus</a>
         <button
@@ -99,7 +112,7 @@
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Thiết lập tài khoản</a>
-                <a class="dropdown-item" href="#">Đăng xuất</a>
+                <a class="dropdown-item" href="./../login.html">Đăng xuất</a>
               </div>
             </li>
           </ul>
@@ -246,7 +259,13 @@
         </div>
         <div class="form-group">
           <label for="ngaydiInput">Ngày đi</label>
-          <input name="NgayDi" class="form-control" id="ngaydiInput" required />
+          <input
+            name="NgayDi"
+            value="09/12/2020"
+            class="form-control"
+            id="ngaydiInput"
+            required
+          />
           <script>
             let today = new Date(
               new Date().getFullYear(),
