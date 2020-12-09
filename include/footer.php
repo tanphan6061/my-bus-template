@@ -11,9 +11,9 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
                 <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">TNZ CORP</h6>
+                <h6 class="text-uppercase font-weight-bold">MyBus</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>Hiện tại TNZ CORP là một công ty không có thực nên không có gì để mô tả.</p>
+                <p>Hiện tại MyBus là một công ty không có thực nên không có gì để mô tả.</p>
 
             </div>
             <!-- Grid column -->
@@ -67,7 +67,7 @@
                 <p>
                     <i class="fa fa-home mr-3"></i> 70/10 Tô Ký, P. Tân Chánh Hiệp, Q.12, TP.HCM</p>
                 <p>
-                    <i class="fa fa-envelope mr-3"></i> info@TNZ.vn</p>
+                    <i class="fa fa-envelope mr-3"></i> info@MyBus.vn</p>
                 <p>
                     <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
                 <p>

@@ -11,7 +11,7 @@ ob_start();
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Đặt vé xe khách | TNZ CORP</title>
+    <title>Đặt vé xe khách | MyBus CORP</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../assets/css/custom.css"/>
     <script src="../assets/js/jquery.min.js"></script>
@@ -28,7 +28,7 @@ ob_start();
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="../">TNZ</a>
+        <a class="navbar-brand" href="../">MyBus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
